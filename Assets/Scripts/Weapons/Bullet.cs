@@ -4,13 +4,17 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    private Vector3 _direction = new(1,0,0);
-    private float _speed;
-    [SerializeField] 
-
+    private Vector3 _direction;
+    [SerializeField] private float _speed = 10;
+    
     public float Speed
     {
         set => _speed = value;
+    }
+
+    public Vector3 Direction
+    {
+        set => _direction = value;
     }
 
     void FixedUpdate()

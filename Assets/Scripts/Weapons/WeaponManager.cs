@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
+using Weapons;
 
 public class WeaponManager: MonoBehaviour
 {
     [SerializeField] private int _numAvailableWeapons;
     [SerializeField] private const int _maxAvailableWeapons = 12;
     private List<Weapon> _weaponList;
-    private const int NUMFIND = 3;
+
     
     public bool AddWeapon(Weapon newWeapon)
     {
@@ -40,20 +41,4 @@ public class WeaponManager: MonoBehaviour
         _weaponList = new List<Weapon>();
     }
     
-    
-    
-    private Vector3 LocateEnemy()
-    {
-        var results = new Collider2D[NUMFIND];
-        Physics2D.OverlapCircleNonAlloc(transform.position, 10, results);
-
-        foreach (var result in results)
-        {
-            if (result!= null && result.CompareTag("Enemy"))
-            {
-                return result.transform.position;
-            }
-        }
-        return (Vector3) Random.insideUnitCircle;
-    }
 }
