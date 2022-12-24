@@ -5,6 +5,5 @@ using UnityEngine;
 public class Enemy_SO : ScriptableObject
 {
    public int maxHealth;
-   public int currentHealth;
    public float speed;
 }

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,15 +8,17 @@ public class EnemyHealth : MonoBehaviour
 {
     [SerializeField] private Enemy_SO enemyData;
     [SerializeField] private UnityEvent<int> healthChanged;
-    public int HealthValue
+    private int currentHealth;
+    
+    private void Awake()
     {
-        get { return enemyData.currentHealth; }
+        currentHealth = enemyData.maxHealth;
     }
 
     public void DecreaseHealth(int amount)
     {
-        enemyData.currentHealth -= amount;
-        healthChanged.Invoke(enemyData.currentHealth);
+        currentHealth -= amount;
+        healthChanged.Invoke(currentHealth);
     }
     
 }

@@ -26,7 +26,7 @@ public class PlayerMissleAttack : MonoBehaviour
         if (col.CompareTag(targetTag))
         {
             var enemyHealth  = col.GetComponent<EnemyHealth>();
-            enemyHealth.DecreaseHealth(1);
+            enemyHealth.DecreaseHealth(damage);
             attackEvent.Invoke();
         }
     }

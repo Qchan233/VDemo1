@@ -5,8 +5,7 @@ using UnityEngine.Events;
 
 public class EnemyDeath : MonoBehaviour
 {
-    [SerializeField] private UnityEvent<int> DiedEvent;
-    [SerializeField] private int enemyEXP; 
+    [SerializeField] private UnityEvent DiedEvent;
     public void CheckDeath(int health)
     {
         if (health <= 0)
@@ -17,6 +16,6 @@ public class EnemyDeath : MonoBehaviour
     public void Die()
     {
         gameObject.SetActive(false);
-        DiedEvent.Invoke(enemyEXP);
+        DiedEvent.Invoke();
     }  
 }

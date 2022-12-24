@@ -9,7 +9,7 @@ public class badObject : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
-		scene = SceneManager.GetActiveScene ();
+		scene = UnityEngine.SceneManagement.SceneManager.GetActiveScene ();
 	}
 	
 	// Update is called once per frame

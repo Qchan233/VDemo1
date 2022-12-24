@@ -52,7 +52,7 @@ public class PlayerScript : MonoBehaviour
 	void reloadGame ()
 	{
 		SpawnMega.isDead = false;
-		SceneManager.LoadScene (0);
+		UnityEngine.SceneManagement.SceneManager.LoadScene (0);
 	}
 
 	void FixedUpdate ()
