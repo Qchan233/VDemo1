@@ -1,19 +1,9 @@
-﻿using Timers;
-using UnityEngine;
+﻿using UnityEngine;
 
-public abstract class Weapon
+namespace Weapons
 {
-    private GameObject bullet;
-    
-    
-    public GameObject WeaponObject()
-    {
-        return null;
-    }
-    public void Fire()
+    public class Weapon: ScriptableObject
     {
         
     }
-    
-
 }

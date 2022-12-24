@@ -121,7 +121,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -139,11 +139,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c60fd89dc9a08be4983d437971e4a0d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  status: {fileID: 1244607355473268162}
+  health: {fileID: 1244607355473268162}
   spriteRender: {fileID: 592611649475280574}
-  damaged:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &1244607355473268162
 MonoBehaviour:
   m_ObjectHideFlags: 0
