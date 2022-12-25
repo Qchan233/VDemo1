@@ -133,7 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4810146}
   - component: {fileID: 4810147}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: HealthBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -360,7 +360,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 10257117}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Handle Slide Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -679,7 +679,7 @@ GameObject:
   - component: {fileID: 199671305}
   - component: {fileID: 199671307}
   - component: {fileID: 199671306}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -994,7 +994,7 @@ GameObject:
   - component: {fileID: 378070573}
   - component: {fileID: 378070575}
   - component: {fileID: 378070574}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1149,7 +1149,7 @@ GameObject:
   - component: {fileID: 434053068}
   - component: {fileID: 434053067}
   - component: {fileID: 434053066}
-  m_Layer: 11
+  m_Layer: 6
   m_Name: ItemCollector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1770,7 +1770,7 @@ GameObject:
   m_Component:
   - component: {fileID: 506553128}
   - component: {fileID: 506553129}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: AK47
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2362,7 +2362,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 894412953}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2445,6 +2445,7 @@ GameObject:
   - component: {fileID: 965800191}
   - component: {fileID: 965800190}
   - component: {fileID: 965800189}
+  - component: {fileID: 965800192}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -2501,6 +2502,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &965800192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 965800188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df650641e68c03446b83262821afe6f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _currentCoins: 0
 --- !u!1 &1006553326
 GameObject:
   m_ObjectHideFlags: 0
@@ -2788,7 +2802,7 @@ GameObject:
   - component: {fileID: 1054969185}
   - component: {fileID: 1054969184}
   - component: {fileID: 1054969187}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PlayerHealthUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3482,7 +3496,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1349889132}
   - component: {fileID: 1349889133}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Weapons
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3573,6 +3587,7 @@ GameObject:
   - component: {fileID: 1469966727}
   - component: {fileID: 1469966728}
   - component: {fileID: 1469966729}
+  - component: {fileID: 1469966730}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -3847,6 +3862,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+--- !u!114 &1469966730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1469966717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df650641e68c03446b83262821afe6f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _currentCoins: 0
 --- !u!1 &1550799105
 GameObject:
   m_ObjectHideFlags: 0
@@ -3894,7 +3922,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1633459843}
   - component: {fileID: 1633459844}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3979,7 +4007,7 @@ GameObject:
   - component: {fileID: 1680314780}
   - component: {fileID: 1680314782}
   - component: {fileID: 1680314781}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4208,8 +4236,7 @@ GameObject:
   - component: {fileID: 1851902274}
   - component: {fileID: 1851902275}
   - component: {fileID: 1851902277}
-  - component: {fileID: 1851902278}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -4573,20 +4600,3 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
---- !u!114 &1851902278
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1851902268}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24077d58b31efba45a52904b599f98b1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 0}
-  spriteRenderer: {fileID: 1851902272}
-  walkState: Walk
-  idleState: Idle
-  attackState: Attack
