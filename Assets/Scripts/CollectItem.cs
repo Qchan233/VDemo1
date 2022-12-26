@@ -17,6 +17,6 @@ public class CollectItem : MonoBehaviour
 
     void AddCoin()
     {
-        CoinsManager.Coins += _coinAmount;
+        MoneyManager.Money += _coinAmount;
     }
 }

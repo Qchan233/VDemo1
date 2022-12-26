@@ -7,7 +7,6 @@ using UnityEngine.Events;
 public class PlayerLevelManager : MonoBehaviour
 {
     public static PlayerLevelManager Instance { get; private set; }
-    private int currentLevel = 1;
     private int currentEXP;
 
     [SerializeField] private UnityEvent UpgradeEvent;
@@ -31,6 +30,7 @@ public class PlayerLevelManager : MonoBehaviour
 
     public void Upgrade()
     {
+        Debug.Log("Upgrade!");
         UpgradeEvent.Invoke();
     }
 }

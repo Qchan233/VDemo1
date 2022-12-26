@@ -10,8 +10,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 76126b5a68694764aaaf491a74dc014a, type: 3}
-  m_Name: PlayerData
+  m_Name: PlayerInitialData
   m_EditorClassIdentifier: 
-  maxHealth: 0
-  speed: 0
-  shield: 0
+  health: 0
+  sanity: 0
+  defense: 0
+  lifeRegeneration: 0
+  awake: 0
+  numWeaponSlot: 0
+  attackSpeed: 0
+  criticalRate: 0
+  moveSpeed: 5
+  numItemSlot: 0
+  damage: 0
+  sharpTeeth: 0
+  shieldPenetration: 0
+  craziness: 0
+  will: 0
+  money: 0
+  numRevive: 0
+  dodgeRate: 0
+  expRate: 0
+  luck: 0
+  knowledge: 0
